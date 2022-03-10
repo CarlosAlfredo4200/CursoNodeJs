@@ -1,0 +1,6 @@
+1 Instalar dependencias
+
+npm install --save express (para que se guarden como dependencia del proyecto y express seria el servidor)
+npm  install --save-dev nodemon (para autorender y es dependencia dev que solo es para el dollo )
+
+Crear el servidor express
