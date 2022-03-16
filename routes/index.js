@@ -8,6 +8,8 @@ module.exports = function(){
 
     router.get('/nosotros',  proyectosController.nosotros)
 
+    router.get('/contactos',  proyectosController.contactos)
+
     return router;
 }
  

@@ -1,8 +1,11 @@
 exports.proyectosHome = (req,res) => {
-    res.send('index Home')
+    res.render('index')
 }
 
-
 exports.nosotros = (req,res) => {
-    res.send('nosotros')
+    res.send('Desde nosotros')
+} 
+
+exports.contactos = (req,res) => {
+    res.send('Desde contactos')
 } 

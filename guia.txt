@@ -1,4 +1,32 @@
+Que es NodeJs:
+Es un entorno de código abierto multiplataforma que permite crear app del lado del servidor.
+-------------------------------
+
+Express es un frameworks  web para node. Soporta las vistas.MVC. Separación de código.
+-------------------------------
+
+Middleware: Un middleware es un bloque de código que se ejecuta entre la petición que 
+            hace el usuario (request) hasta que la petición llega al servidor.
+            Funciones que se ejecutan unas detras de otras
+
+            
+            const middlewares = {
+
+                isLoggedIn : function (req, res, next) {
+                    if (req.user) return next();
+                    res.redirect('/');
+                }
+            };
+            module.exports = middlewares;
+
 1 Instalar dependencias
+-------------------------------
+
+Template Engine: Motores de plantilla. Las vistas html en express.
+
+ARRANCAR EL SERVIDOR: El proyecto se inicia con npm run start / npm start
+
+-------------------------------
 
 npm install --save express (para que se guarden como dependencia del proyecto y express seria el servidor)
 npm  install --save-dev nodemon (para autorender y es dependencia dev que solo es para el dollo )
